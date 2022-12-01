@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>World Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/0fd7141dd0.js"></script>
+</head>
+    <header class="header">
+        <div class="contenedor logo-nav-contenedor">
+            <span class="menu-icon">Menu...</span>
+            <nav class="navegacion">
+                <ul>
+                    <li class="menu-hambur" id="icono-menu">
+                        <!--<i class="fa-solid fa-bars-staggered"></i>-->
+                        <img src="Img/ico2.png" alt="" class="img-mas">
+                    </li>
+                    <li><img src="Img/Icono.png" alt="" class="logo"></li>
+                    <li><a href="#" class="A">Juegos</a></li>
+                    <li><a href="Php/Form.php" class="A">Quejas y Sugerencias</a></li>
+                    <li><a href="Php/Acerca_de.php" class="A">Acerca de...</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="cont-menu active" id="menu">
+        <ul>
+            <li onclick="Aventura()">Aventura</li>
+            <li onclick="OPENW()">Mundo abierto</li>
+            <li onclick="Accion()" >Acción</li>
+            <li onclick="Shoot()">Fps</li>
+        </ul>
+    </div>
+
+    <div class="carrusel">
+
+        <div class="carrusel__contenedor">
+            
+            <h2>
+                Juegos Recomendados
+            </h2>
+
+            <div class="carrusel__lista">
+                <div class="carrusel__elemento">
+                        <img class="HZD" onclick="HZD()" src="Img/hzd.jpg" alt="">
+                    </a>
+                    <p>Horizon Zero Dawn</p>
+                </div>
+                <div class="carrusel__elemento">
+                    <img onclick="GI()" src="Img/Gi.jpg" alt="">
+                    <p>Genshin Impact</p>
+                </div>
+                <div class="carrusel__elemento">
+                    <img class="TheWitch" onclick="Witcher()" src="Img/thewitch.jpg" alt="">
+                    <p>The Witcher</p>
+                </div>
+                <div class="carrusel__elemento">
+                    <img  src="Img/Elden Ring.jpg" alt="">
+                    <p>Elden Ring</p>
+                </div>
+                <div class="carrusel__elemento">
+                    <img src="Img/WZ2.jpg" alt="">
+                    <p>Warzone 2</p>
+                </div>
+
+                </div>
+            </div>
+
+
+            <div class="contenedor__botones">
+
+                <div role="tablist" class="carrusel__indicadores"></div>
+
+                <button area-label="Anterior" class="carrusel__anterior">
+                    <i class="fa-solid fa-chevron-left" style="color: rgb(255, 255, 255)"></i>
+                </button>
+    
+                <button area-label="Siguiente" class="carrusel__siguiente">
+                    <i class="fa-solid fa-chevron-right" style="color: white;"></i>
+                </button>
+            </div>
+            
+    </div>
+
+
+    <div class="tienda_online">
+        <p class="Donde">Tiendas en linea</p>
+
+        <div class="Contenedor_tienda">
+            
+            <div class="tienda1">
+                    <img class="steam" onclick="Steam()" src="Img/STEAM.jpg" alt="">
+            </div>
+            
+            <div class="tienda2">
+                    <img class="epic" onclick="Epic()" src="Img/EPIC.jpg" alt="">
+            </div>
+            <div class="tienda3">
+                    <img class="GOG" onclick="GOG()" src="Img/GOG.webp" alt="">
+            </div>
+            <div class="tienda4">
+                    <img src="Img/PLAY.jpeg" alt="" onclick="Play()" class="Play">
+            </div>
+            <div class="tienda5">
+                    <img src="Img/XBOX.jpg" alt="" onclick="Xbox()" class="Xbox">
+            </div>
+            <div class="tienda6">
+                    <img src="Img/Battle.jpeg" alt="" onclick="battle()" class="Battle">
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="Js/scripts.js"></script>
+
+    <img src="Img/Icono1.png" alt="" class="GITHUB">
+
+</body>
+</html>
